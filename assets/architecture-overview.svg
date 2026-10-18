@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650" role="img" aria-labelledby="title desc">
+<title id="title">TİMURLENK mimari sınırları</title>
+<desc id="desc">Mevcut motor katmanlarını, deney kayıtlarını ve henüz etkin olmayan Persona entegrasyonunu gösteren mimari diyagram.</desc>
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#09121d"/><stop offset="1" stop-color="#14293b"/></linearGradient>
+ <marker id="arrow" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#d8ad62"/></marker>
+ <style>
+  .h{font:700 26px 'Segoe UI',Arial,sans-serif;fill:#f0d8a7}
+  .title{font:700 18px 'Segoe UI',Arial,sans-serif;fill:#f2f5f7}
+  .body{font:14px 'Segoe UI',Arial,sans-serif;fill:#d2dce4}
+  .muted{font:12px 'Segoe UI',Arial,sans-serif;fill:#9eb0bf}
+  .tag{font:700 11px 'Segoe UI',Arial,sans-serif;letter-spacing:1.5px;fill:#e2bd79}
+ </style>
+</defs>
+<rect width="1200" height="650" rx="18" fill="url(#bg)"/>
+<text x="42" y="53" class="h">TİMURLENK — Mimari sınırlar</text>
+<text x="44" y="78" class="muted">Mevcut çalışma akışı ile planlanan araştırma bağlantılarını ayrı gösterir.</text>
+
+<g>
+ <rect x="40" y="115" width="250" height="130" rx="12" fill="#1a3043" stroke="#66829a"/>
+ <text x="60" y="144" class="tag">INPUT / RULES</text>
+ <text x="60" y="174" class="title">Oyun kuralları</text>
+ <text x="60" y="198" class="body">Tahta • FEN • Yasal hamleler</text>
+ <text x="60" y="219" class="body">Sürümlenmiş varyant modeli</text>
+
+ <rect x="335" y="115" width="250" height="130" rx="12" fill="#253449" stroke="#d8ad62" stroke-width="1.5"/>
+ <text x="355" y="144" class="tag">PRIVATE ENGINE</text>
+ <text x="355" y="174" class="title">timurlenk_core</text>
+ <text x="355" y="198" class="body">Arama • Değerlendirme • NNUE</text>
+ <text x="355" y="219" class="body">İç PersonaLayer / Psyche</text>
+
+ <rect x="630" y="115" width="250" height="130" rx="12" fill="#1a3043" stroke="#66829a"/>
+ <text x="650" y="144" class="tag">RUNTIME / PROTOCOL</text>
+ <text x="650" y="174" class="title">timurlenk_uci</text>
+ <text x="650" y="198" class="body">UCI komutları • Çalışma zamanı</text>
+ <text x="650" y="219" class="body">İsteğe bağlı deney kaydı</text>
+
+ <rect x="925" y="115" width="235" height="130" rx="12" fill="#163b3b" stroke="#58ae9d"/>
+ <text x="945" y="144" class="tag">LOCAL ARTIFACTS</text>
+ <text x="945" y="174" class="title">JSONL v4</text>
+ <text x="945" y="198" class="body">Config/source fingerprint</text>
+ <text x="945" y="219" class="body">Model/book hash ve sonuçlar</text>
+
+ <path d="M290 180H329M585 180H624M880 180H919" stroke="#d8ad62" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+</g>
+
+<text x="42" y="294" class="tag">SEPARATE SYSTEMS — NO AUTOMATIC MIRRORING</text>
+<g>
+ <rect x="40" y="320" width="332" height="132" rx="12" fill="#17293a" stroke="#608199"/>
+ <text x="62" y="352" class="title">Public showcase</text>
+ <text x="62" y="379" class="body">timurlenk-engine-core</text>
+ <text x="62" y="402" class="body">Tanıtım • Mimari • Roadmap</text>
+ <text x="62" y="425" class="body">Onaylanmış kamuya açık belgeler</text>
+
+ <rect x="434" y="320" width="332" height="132" rx="12" fill="#322a42" stroke="#9c7bc4"/>
+ <text x="456" y="352" class="title">Ayrı Persona depoları</text>
+ <text x="456" y="379" class="body">Bağımsız geliştirme ve olgunlaşma</text>
+ <text x="456" y="402" class="body">Önce şema / veri kalitesi incelemesi</text>
+ <text x="456" y="425" class="body">Daha sonraki araştırma fazı</text>
+
+ <rect x="828" y="320" width="332" height="132" rx="12" fill="#332b20" stroke="#b28a4d"/>
+ <text x="850" y="352" class="title">Tarih Oyunları prototipleri</text>
+ <text x="850" y="379" class="body">Ayrı katalog / vitrin / uygulamalar</text>
+ <text x="850" y="402" class="body">Her prototipin bu motoru kullandığı</text>
+ <text x="850" y="425" class="body">varsayılmaz; tek tek kanıtlanmalıdır.</text>
+</g>
+
+<path d="M1042 245V282H600V315" stroke="#8fa2b3" stroke-width="1.8" stroke-dasharray="6 7" fill="none" marker-end="url(#arrow)"/>
+<rect x="350" y="270" width="501" height="28" rx="14" fill="#111e2b" stroke="#405568"/>
+<text x="600" y="289" text-anchor="middle" class="muted">İleride olası salt okunur importer — henüz etkin entegrasyon değil</text>
+
+<rect x="40" y="493" width="1120" height="112" rx="12" fill="#101e2b" stroke="#43596a"/>
+<text x="62" y="523" class="tag">STATUS LEGEND</text>
+<circle cx="75" cy="551" r="6" fill="#58ae9d"/><text x="90" y="556" class="body">Mevcut / kod ve kaynak belgelerinde tanımlı</text>
+<circle cx="480" cy="551" r="6" fill="#d8ad62"/><text x="495" y="556" class="body">Kanıtı kapsamına göre yorumlanmalı</text>
+<circle cx="850" cy="551" r="6" fill="#9c7bc4"/><text x="865" y="556" class="body">Planlanan / hazır entegrasyon değil</text>
+<text x="62" y="583" class="muted">Entegrasyon, ancak gerçek veri değişimi ve uçtan uca sözleşme testi başarıyla tamamlandıktan sonra etkin sayılır.</text>
+</svg>
