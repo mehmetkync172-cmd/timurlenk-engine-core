@@ -1,13 +1,13 @@
 # Araştırma Yol Haritası
 
-**Durum görüntüsü:** 16 Ekim 2026  
+**Durum görüntüsü:** 24 Ekim 2026  
 **İlke:** Bu yol haritası hedef ve kapıları tanımlar; planlanan işi tamamlanmış iş gibi göstermez.
 
 ## Aşama 0 — Kaynağı ve iddiaları sabitle
 
 **Amaç:** Tek bir güncel kaynak doğruluk noktası kullanmak.
 
-- Özel motor `main` HEAD'i, açık PR'lar ve son CI koşuları her teknik oturumda kontrol edilir.
+- Özel motor `main` HEAD'i, PR durumu ve son CI koşuları her teknik oturumda kontrol edilir. 24 Ekim kontrolünde `main` HEAD'i `8ea25deb331be42306c0ecd7edf8faa7282569e5` olarak doğrulandı; açık PR listesi boştu.
 - V7 handoff ZIP'i ile `engine-v7/` arasındaki sürüm farkı korunur ve belgelenir.
 - V1–V4 deney kayıtları tarihsel şemaları bozmadan doğrulanır.
 - Tarihî kural spesifikasyonu, uygulama davranışı ve kaynak yorumları ayrı izlenir.
@@ -16,10 +16,11 @@
 
 ## Aşama 1 — Motor güvenilirliği
 
-- Açık PR #11'deki NNUE yükleme, hamle üretimi, make/unmake ve UCI zaman sınırı regressions'larını gözden geçir.
+- PR #11 geçmişte birleştirilmiş; kalan doğrulama, güncel ana dal ve raporlarla yeniden karşılaştırılmalı.
 - Skaler ve optimize NNUE yolları için aynı model/konum çiftlerinde diferansiyel testleri sürdür.
 - Kural regresyonları, perft ve model manifest kontrolünü düzenli çalıştır.
-- PR #7 açılış kitabı köken testi için güncel main'e göre eksik kapsamı belirle.
+- PR #7 geçmiş durum olarak kapalı; güncel main'de açılış kitabı köken testi ve v4 alanlarının varlığını kaynak/test üzerinden doğrula.
+- Strength harness araştırma dalı `research/strength-measurement-v1-clean` içinde kaldı. CI, GitHub Actions harcama limiti nedeniyle job başlamadan bloklandı; limit yenilenince harness testlerini çalıştırmadan bu dalı birleştirme.
 
 **Çıkış kapısı:** Ana dal üzerinde gerekli job'lar başarılı; deney veri kayıtları gerçek UCI çıktısına ve doğru artefakt hash'ine dayanıyor.
 
