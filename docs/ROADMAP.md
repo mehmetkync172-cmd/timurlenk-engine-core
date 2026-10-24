@@ -7,7 +7,7 @@
 
 **Amaç:** Tek bir güncel kaynak doğruluk noktası kullanmak.
 
-- Özel motor `main` HEAD'i, PR durumu ve son CI koşuları her teknik oturumda kontrol edilir. 24 Ekim kontrolünde `main` HEAD'i `8ea25deb331be42306c0ecd7edf8faa7282569e5` olarak doğrulandı; açık PR listesi boştu.
+- Özel motorun son kontrol edilen engine-code commit'i `6e936104d54f42407925ea6717e98f67a5e97718`; sonraki commit'ler manuel workflow ve dokümantasyon kayıtlarını güncelledi. Her teknik oturumda canlı dal başı, PR durumu ve CI koşuları yeniden okunur. 24 Ekim kontrolünde açık PR listesi boştu.
 - V7 handoff ZIP'i ile `engine-v7/` arasındaki sürüm farkı korunur ve belgelenir.
 - V1–V4 deney kayıtları tarihsel şemaları bozmadan doğrulanır.
 - Tarihî kural spesifikasyonu, uygulama davranışı ve kaynak yorumları ayrı izlenir.
