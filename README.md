@@ -62,8 +62,9 @@ Daha fazla bağlam: [Persona entegrasyonu için sonraki oturum devir notu](docs/
 
 ## Güncel durum — 24 Ekim 2026
 
-- Özel motor deposunun güncel `main` HEAD'i: [`8ea25deb331be42306c0ecd7edf8faa7282569e5`](https://github.com/mehmetkync172-cmd/timurlenk-engine-private/commit/8ea25deb331be42306c0ecd7edf8faa7282569e5). Bu commit yalnızca manuel güç ölçüm workflow dosyasını varsayılan dala ekler; araştırma dalındaki motor kodunu birleştirmez.
+- Son kontrol edilen motor-kod commit'i [`6e936104d54f42407925ea6717e98f67a5e97718`](https://github.com/mehmetkync172-cmd/timurlenk-engine-private/commit/6e936104d54f42407925ea6717e98f67a5e97718); sonraki ana dal commit'leri manuel test workflow'u ve dokümantasyon içindir. Güç ölçüm kodu `main` ile birleştirilmedi.
 - Güncel güç ölçüm çalışması [`research/strength-measurement-v1-clean`](https://github.com/mehmetkync172-cmd/timurlenk-engine-private/tree/research/strength-measurement-v1-clean) dalında kalır ve henüz `main` ile birleştirilmemiştir.
+- Manuel strength harness workflow'u artık küçük smoke raporunun `rating_ready=false` olmasını doğrular ve raw output'u Actions artefaktı olarak 14 gün saklar. Bu ek adımlar henüz çalıştırılarak doğrulanmadı.
 - GitHub Actions manuel çalıştırması, hesabın Actions harcama limiti/ödeme durumu nedeniyle job başlamadan engellendi. Bu sebeple güncel strength harness için başarılı CI sonucu henüz yoktur.
 - Önceki yerel kaynak snapshot'ında CTest 12/12, model manifesti 23/23 ve UCI smoke 6/6 kontrolleri geçmişti. Bu sonuçlar araştırma dalındaki yeni strength harness'in doğrulandığı anlamına gelmez.
 - Persona entegrasyonu etkin değildir; doğrulanmış API veya otomatik veri aktarımı yoktur.
