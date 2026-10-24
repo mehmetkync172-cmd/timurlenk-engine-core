@@ -60,16 +60,16 @@ Timurlenk motorundaki `Apex::PersonaLayer`, motorun iç oyun stili, Psyche ve ar
 
 Daha fazla bağlam: [Persona entegrasyonu için sonraki oturum devir notu](docs/PERSONA_INTEGRATION_HANDOFF.md).
 
-## Güncel durum — 16 Ekim 2026
+## Güncel durum — 24 Ekim 2026
 
-- Motorun güncel kaynak doğruluk noktası özel deponun `main` dalıdır. İnceleme anındaki HEAD: `d75d967344319376b0372a30fd8823836ddd8707`.
-- Özel depoda 16 Ekim tarihli Perft Test Suite, NNUE-vs-HCE Gauntlet ve Benchmark Log zamanlanmış çalışmaları başarılıdır.
-- Motor durum belgesi 23 model/açılış kitabı artefaktı için manifest kimlik kontrolü bildirir; hash eşleşmesi model kalitesi veya oynama gücü kanıtı değildir.
-- Haricî Persona entegrasyonu etkin değildir.
-- **ELO / mutlak oyun gücü henüz belirlenmiş değildir.** Güç iddiaları için ayrı, renk değişimli, tekrarlanabilir ve istatistiksel olarak raporlanan bir maç protokolü gerekir.
+- Özel motor deposunun güncel `main` HEAD'i: [`8ea25deb331be42306c0ecd7edf8faa7282569e5`](https://github.com/mehmetkync172-cmd/timurlenk-engine-private/commit/8ea25deb331be42306c0ecd7edf8faa7282569e5). Bu commit yalnızca manuel güç ölçüm workflow dosyasını varsayılan dala ekler; araştırma dalındaki motor kodunu birleştirmez.
+- Güncel güç ölçüm çalışması [`research/strength-measurement-v1-clean`](https://github.com/mehmetkync172-cmd/timurlenk-engine-private/tree/research/strength-measurement-v1-clean) dalında kalır ve henüz `main` ile birleştirilmemiştir.
+- GitHub Actions manuel çalıştırması, hesabın Actions harcama limiti/ödeme durumu nedeniyle job başlamadan engellendi. Bu sebeple güncel strength harness için başarılı CI sonucu henüz yoktur.
+- Önceki yerel kaynak snapshot'ında CTest 12/12, model manifesti 23/23 ve UCI smoke 6/6 kontrolleri geçmişti. Bu sonuçlar araştırma dalındaki yeni strength harness'in doğrulandığı anlamına gelmez.
+- Persona entegrasyonu etkin değildir; doğrulanmış API veya otomatik veri aktarımı yoktur.
+- **ELO / mutlak oyun gücü belirlenmiş değildir.** Renk değişimli, eşleştirilmiş ve yeterli örneklemli maç kanıtı elde edilmeden güç artışı iddiası yapılmaz.
 
-Ayrıntılı durum ve kaynak senkronizasyon denetimi: [PROJECT_STATUS.md](docs/PROJECT_STATUS.md).  
-Araştırma kapıları: [ELO ve oyun gücü doğrulama planı](docs/ELO_VALIDATION_PLAN.md).
+Ayrıntılar: [özel depodaki güncel durum belgesi](https://github.com/mehmetkync172-cmd/timurlenk-engine-private/blob/main/engine-v7/STATUS.md) ve [Oyun Gücü Doğrulama Planı](docs/ELO_VALIDATION_PLAN.md).
 
 ## Nereden başlamalı?
 
